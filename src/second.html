@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<script src="https://kit.fontawesome.com/f4ea8639da.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="second-style.css">
+<script type="text/javascript" src="main.js"></script>
+<script src="./js/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+<script src="./js/bootstrap.bundle.min.js"></script>
+<head>
+	<title>Weather</title>
+</head>
+<body>
+<form class="may" onsubmit="event.preventDefault(); fetchData();"> <!-- use inline JS to print input to console on submit -->
+<input type="text" name="give" id="give" size="50" placeholder="Enter City Name">
+
+<button type="submit" class="search">	
+<i class="fas fa-search">
+</button></i>
+</form>
+<button type="submit" class="mail" onclick="window.location.href='third.html';">
+<i class="fas fa-envelope">
+	</button></i>
+</i>
+<div id="app">
+	
+</div>
+<div id="loader" class="center"></div>
+<script type="text/javascript">
+	document.onreadystatechange = function() { 
+            if (document.readyState !== "complete") { 
+                document.querySelector( 
+                  "body").style.visibility = "hidden"; 
+                document.querySelector( 
+                  "#loader").style.visibility = "visible"; 
+            } else { 
+                document.querySelector( 
+                  "#loader").style.display = "none"; 
+                document.querySelector( 
+                  "body").style.visibility = "visible"; 
+            } 
+        }; 
+</script> 
+</body>
+</html>
